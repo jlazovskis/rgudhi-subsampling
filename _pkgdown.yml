@@ -87,3 +87,6 @@ reference:
     - fetch_bunny
     - fetch_spiral_2d
     - clear_data_home
+  - title: Subsampling
+  - contents:
+    - sparsify_point_set
