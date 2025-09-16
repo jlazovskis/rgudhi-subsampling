@@ -1,6 +1,10 @@
 #' Subsampling
 #'
-#' The function [sparsify_point_set()] sparsifies a point set.
+#' The function [sparsify_point_set()] sparsifies a point set, given an input
+#'   minimum squared distance. The function proceeds sequentially through the
+#'   input dataset, at every element marking for deletion every later element
+#'   closer than the indiciated minimum squared distance. The output is all the
+#'   elements not marked for deletion.
 #'
 #' @param points Either a `n x d` matrix or a length-`n` list of `d`-
 #'   dimensional vectors
