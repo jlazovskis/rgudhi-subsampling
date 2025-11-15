@@ -89,4 +89,6 @@ reference:
     - clear_data_home
   - title: Subsampling
   - contents:
+    - choose_n_farthest_points
+    - pick_n_random_points
     - sparsify_point_set
