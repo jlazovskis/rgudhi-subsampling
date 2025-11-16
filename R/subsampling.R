@@ -27,7 +27,7 @@
 #' @return The subsample point set, in the order they were selected by the 
 #'   greedy strategy.
 #' @export
-choose_n_farthest_points <- function(points = NULL,
+choose_n_farthest_points <- function(points,
                                      off_file = "",
                                      nb_points = 18446744073709551615,
                                      starting_point = NULL,
@@ -57,7 +57,7 @@ choose_n_farthest_points <- function(points = NULL,
 #'
 #' @return The subsample point set.
 #' @export
-pick_n_random_points <- function(points = NULL,
+pick_n_random_points <- function(points,
                                  off_file = "",
                                  nb_points = 0) {
   gd$subsampling$pick_n_random_points(
@@ -85,7 +85,7 @@ pick_n_random_points <- function(points = NULL,
 #'
 #' @return The subsample point set.
 #' @export
-sparsify_point_set <- function(points = NULL,
+sparsify_point_set <- function(points,
                                off_file = "",
                                min_squared_dist = 0.0) {
   gd$subsampling$sparsify_point_set(
