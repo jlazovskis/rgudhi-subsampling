@@ -31,7 +31,7 @@ choose_n_farthest_points <- function(points = NULL,
                                      off_file = "",
                                      nb_points = 18446744073709551615,
                                      starting_point = NULL,
-                                     fast = TRUE)) {
+                                     fast = TRUE) {
   gd$subsampling$choose_n_farthest_points(
     points = points,
     off_file = off_file,
