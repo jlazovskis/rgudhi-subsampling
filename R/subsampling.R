@@ -85,8 +85,7 @@ pick_n_random_points <- function(points,
 #'
 #' @return The subsample point set.
 #' @export
-sparsify_point_set <- function(points,
-                               min_squared_dist = 0.0) {
+sparsify_point_set <- function(points, min_squared_dist) {
   gd$subsampling$sparsify_point_set(
     points = points,
     min_squared_dist = min_squared_dist
